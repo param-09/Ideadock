@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.modal">
+    <class name="AdminPic" table="adminpic">
+        <id column="id" name="id">
+            <generator class="increment"></generator>
+        </id>
+        <property name="admin_id" column="admin_id"></property>
+        <property name="path" column="path"></property>
+        <property name="active_flag" column="active_flag"></property>
+        <property name="updated_date"  type="timestamp" >
+            <column name="updated_date"/>
+        </property>	
+    </class>
+</hibernate-mapping>

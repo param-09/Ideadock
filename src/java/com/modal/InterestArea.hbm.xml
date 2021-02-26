@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.modal">
+    <class name="InterestArea" table="investor_interest">
+        <id column="id" name="id">
+            <generator class="increment"></generator>
+        </id>
+        <property name="user_id" column="user_id"></property>
+        <property name="topic" column="topic"></property>
+        <property name="amount" column="amount"></property>	
+        <property name="description" type="text" column="description"></property>
+        <property name="created_date"  type="timestamp" >
+            <column name="created_date"/>
+        </property>	
+        <property name="updated_date"  type="timestamp" >
+            <column name="updated_date"/>
+        </property>	
+	
+    </class>
+</hibernate-mapping>
