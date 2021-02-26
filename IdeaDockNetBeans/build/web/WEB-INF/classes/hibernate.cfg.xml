@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!-- Database connection settings openshift -->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <!-- <property name="hibernate.connection.datasource">java:comp/env/jdbc/MySQLDS</property> -->
+    <!-- Database connection settings localhost -->
+    <property name="connection.url">jdbc:mysql://localhost:3307/project</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">root</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="show_sql">true</property>
+    <mapping resource="com/modal/Role.hbm.xml"/>
+    <mapping resource="com/modal/Users.hbm.xml"/>
+    <mapping resource="com/modal/Useridea.hbm.xml"/>
+    <mapping resource="com/modal/Faq.hbm.xml"/>
+    <mapping resource="com/modal/Admin.hbm.xml"/>
+    <mapping resource="com/modal/Photo.hbm.xml"/>
+    <mapping resource="com/modal/InterestArea.hbm.xml"/>
+    <mapping resource="com/modal/Addcomment.hbm.xml"/>
+    <mapping resource="com/modal/MakeProposal.hbm.xml"/>
+    <mapping resource="com/modal/Contact.hbm.xml"/>
+    <mapping resource="com/modal/Story.hbm.xml"/>
+    <mapping resource="com/modal/ProfilePhoto.hbm.xml"/>
+    <mapping resource="com/modal/Advertisement.hbm.xml"/>
+    <mapping resource="com/modal/AdminPic.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

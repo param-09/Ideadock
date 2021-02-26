@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.modal">
+    <class name="Users" table="user_info">
+        <id column="user_id" name="user_id">
+            <generator class="increment"></generator>
+        </id>
+        <property name="username" column="username"></property>
+        <property name="password" column="password"></property>
+        <property name="fullname" type="text" column="fullname"></property>
+        <property name="email" column="email"></property>	
+        <property name="mobile" column="mobile"></property>
+        <property name="gender" column="gender"></property>
+        <property name="type" column="type"></property>	
+        <property name="color" column="color"></property>	
+
+        <property name="created_date"  type="timestamp" >
+            <column name="created_date"/>
+        </property>	
+        <property name="updated_date"  type="timestamp" >
+            <column name="updated_date"/>
+        </property>	
+        <property name="active_flag" column="active_flag"></property>
+    </class>
+</hibernate-mapping>

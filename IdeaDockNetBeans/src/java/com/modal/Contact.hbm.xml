@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.modal">
+    <class name="Contact" table="contact">
+        <id column="cid" name="cid">
+            <generator class="increment"></generator>
+        </id>
+        <property name="name" column="name"></property>
+        <property name="email" column="email"></property>	
+        <property name="mes" column="mes" type="text"></property>	
+        <property name="status" column="status" ></property>
+        <property name="created_date"  type="timestamp" >
+            <column name="created_date"/>
+        </property>	
+        <property name="updated_date"  type="timestamp" >
+            <column name="updated_date"/>
+        </property>
+    </class>
+</hibernate-mapping>

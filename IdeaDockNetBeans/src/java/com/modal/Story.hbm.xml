@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.modal">
+    <class name="Story" table="story">
+        <id column="id" name="id">
+            <generator class="increment"></generator>
+        </id>
+        <property name="proposal_id" column="proposal_id"></property>
+        <property name="user_id" column="user_id"></property>
+        <property name="likes" column="likes"></property>
+        <property name="story" column="story" type="text" ></property>
+        <property name="created_date"  type="timestamp" >
+            <column name="created_date"/>
+        </property>
+    </class>
+</hibernate-mapping>

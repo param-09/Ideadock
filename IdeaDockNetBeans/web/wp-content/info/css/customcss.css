@@ -1,0 +1,68 @@
+.myaddideaform{
+    margin-top:20px;
+    margin-bottom:20px
+}
+.myprofile{
+    margin-top:50px;
+    margin-bottom:50px;
+    /*border:1px solid #f7931d;*/
+}
+.interest-form{
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.mybtn{
+    background-color: rgb(247, 147, 29);
+}
+.btn-aqua{
+    background-color: #27d7e7;
+    color: #fff;
+}
+.btn-blue{
+    background-color: #3498db;
+    color: #fff;
+}
+.btn-green{
+    background-color: #72c02c;
+    color: #fff;
+}
+.btn-dark-blue{
+
+}
+.btn-light-green{
+    background-color: #79d5b3;
+    color: #fff;
+}
+.btn-red{
+    background-color: #e74c3c;
+    color: #fff;
+}
+.btn-purple{
+    background-color: #9b6bcc;
+    color: #fff;
+}
+.btn-brown{
+    background-color: #9c8061;
+    color: #fff;
+}
+.btn-yellow{
+    background-color: #ffcc00;
+    color: #fff;
+}
+.btn-teal{
+    background-color: #18ba9b;
+    color: #fff;
+}
+.btn-dark-red{
+    background-color: #a10f2b;
+    color: #fff
+}
+.btn-orange{
+    background-color: #f7931d;
+    color: #fff;
+}
+select {
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+}

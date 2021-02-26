@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.modal">
+    <class name="MakeProposal" table="proposal">
+        <id column="id" name="id">
+            <generator class="increment"></generator>
+        </id>
+        <property name="idea_id" column="idea_id"></property>
+        <property name="from_id" column="from_id"></property>
+        <property name="to_id" column="to_id"></property>
+        <property name="name" column="name" type="text"></property>
+        <property name="email" column="email" ></property>
+        <property name="message" column="message" type="text"></property>
+        <property name="accept_status" column="accept_status" ></property>
+        <property name="created_date"  type="timestamp" >
+            <column name="created_date"/>
+        </property>	
+        <property name="updated_date"  type="timestamp" >
+            <column name="updated_date"/>
+        </property>	
+    </class>
+</hibernate-mapping>

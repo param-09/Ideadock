@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.modal">
+    <class name="AddComment" table="comment">
+        <id column="id" name="id">
+            <generator class="increment"></generator>
+        </id>
+        <property name="user_id" column="user_id"></property>
+        <property name="idea_id" column="idea_id"></property>
+        <property name="user_name" column="user_name"></property>
+        <property name="message" type="text" column="message"></property>
+        <property name="created_date"  type="timestamp" >
+            <column name="created_date"/>
+        </property>	
+        <property name="updated_date"  type="timestamp" >
+            <column name="updated_date"/>
+        </property>	
+    </class>
+</hibernate-mapping>
